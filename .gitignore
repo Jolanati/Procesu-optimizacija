@@ -1,0 +1,6 @@
+# pagaidu / temp
+_pptx_tmp/
+.vercel
+.DS_Store
+Thumbs.db
+node_modules/

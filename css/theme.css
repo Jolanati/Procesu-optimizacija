@@ -1,0 +1,321 @@
+/* ============================================================
+   RSU PRINCE2 — Procesu optimizācija
+   Zaļā tēma (green brand theme) virs Reveal.js
+   ============================================================ */
+
+:root {
+  --green-900: #0f3d2e;
+  --green-800: #14532d;
+  --green-700: #1b5e20;
+  --green-600: #2e7d32;
+  --green-500: #2e8b57;
+  --green-200: #c8e6c9;
+  --green-100: #e8f5e9;
+
+  --gray-700: #4a4a4a;
+  --gray-300: #cfcfcf;
+  --gray-100: #f2f2f2;
+
+  --red-600: #c0392b;
+  --red-200: #f5c6c0;
+  --red-100: #fdecea;
+
+  --yellow-600: #b8860b;
+  --yellow-100: #fdf3d8;
+
+  --ink: #1c2b24;
+  --paper: #ffffff;
+}
+
+.reveal {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  font-size: 30px;
+}
+
+.reveal .slides { text-align: left; }
+
+.reveal section {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* ---------- Headings ---------- */
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--green-800);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  margin: 0 0 0.4em;
+}
+
+.reveal h1 { font-size: 1.9em; line-height: 1.15; }
+.reveal h2 { font-size: 1.35em; }
+.reveal h3 { font-size: 1.05em; }
+
+.reveal .slide-title {
+  border-bottom: 4px solid var(--green-600);
+  padding-bottom: 0.25em;
+  margin-bottom: 0.6em;
+}
+
+/* ---------- Links / accents ---------- */
+.reveal a { color: var(--green-600); }
+.reveal .progress { color: var(--green-600); }
+.reveal .controls { color: var(--green-600); }
+.reveal .slide-number { background: transparent; color: var(--green-700); }
+
+/* ---------- Title slide ---------- */
+.title-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
+  color: #fff;
+  padding: 0 6%;
+  border-radius: 6px;
+}
+.title-slide .eyebrow {
+  font-size: 0.7em;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--green-200);
+  margin-bottom: 0.6em;
+}
+.title-slide h1 { color: #fff; font-size: 2.1em; }
+.title-slide .subtitle {
+  font-size: 0.95em;
+  color: var(--green-100);
+  margin-top: 0.3em;
+}
+.title-slide .meta {
+  margin-top: 2.2em;
+  font-size: 0.6em;
+  color: var(--green-200);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Generic flow box ---------- */
+.box {
+  border-radius: 10px;
+  padding: 0.5em 0.7em;
+  font-size: 0.62em;
+  line-height: 1.3;
+}
+.box-title { font-weight: 700; margin-bottom: 0.2em; }
+
+.box--goal {
+  background: var(--green-800);
+  color: #fff;
+  text-align: center;
+  padding: 0.7em 1em;
+}
+.box--goal .box-title { color: var(--green-200); }
+
+.box--program {
+  background: var(--green-600);
+  color: #fff;
+  text-align: center;
+}
+
+.box--solution {
+  background: var(--green-100);
+  border: 2px solid var(--green-500);
+  color: var(--green-900);
+}
+.box--solution .box-title { color: var(--green-700); }
+
+.box--problem {
+  background: var(--gray-100);
+  border: 2px solid var(--gray-300);
+  color: var(--gray-700);
+  text-align: center;
+}
+
+.box--cause {
+  background: var(--red-100);
+  border: 2px solid var(--red-200);
+  color: var(--red-600);
+  text-align: center;
+}
+
+.box ul { margin: 0.2em 0 0; padding-left: 1.1em; }
+.box li { margin: 0.12em 0; }
+
+/* ---------- Slide 1: goal breakdown diagram ---------- */
+.diagram { display: flex; flex-direction: column; gap: 0.55em; height: 100%; }
+.diagram .center { display: flex; justify-content: center; }
+.diagram .center .box { width: 70%; }
+.diagram .columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55em;
+  flex: 1;
+}
+.diagram .column { display: flex; flex-direction: column; gap: 0.4em; }
+.diagram .column .box { flex: 0 0 auto; }
+.diagram .column .box--solution { flex: 1; }
+.connector {
+  text-align: center;
+  color: var(--green-600);
+  font-size: 0.7em;
+  line-height: 0.4;
+}
+
+.legend {
+  display: flex;
+  gap: 1.4em;
+  font-size: 0.5em;
+  margin-top: 0.3em;
+  color: var(--gray-700);
+}
+.legend span { display: flex; align-items: center; gap: 0.4em; }
+.legend i {
+  width: 1.1em; height: 1.1em; border-radius: 3px; display: inline-block;
+}
+.legend .l-solution { background: var(--green-100); border: 2px solid var(--green-500); }
+.legend .l-problem  { background: var(--gray-100); border: 2px solid var(--gray-300); }
+.legend .l-cause    { background: var(--red-100); border: 2px solid var(--red-200); }
+
+/* ---------- Tables ---------- */
+.reveal table.grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.5em;
+  line-height: 1.25;
+}
+.reveal table.grid th,
+.reveal table.grid td {
+  border: 1px solid var(--gray-300);
+  padding: 0.5em 0.6em;
+  vertical-align: top;
+}
+.reveal table.grid thead th {
+  background: var(--green-800);
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+}
+.reveal table.grid tbody th {
+  background: var(--green-100);
+  color: var(--green-900);
+  text-align: left;
+  width: 22%;
+  font-weight: 700;
+}
+.reveal table.grid.center td { text-align: center; }
+
+/* Evaluation matrix cell states */
+.cell-low  { background: var(--green-100); color: var(--green-700); font-weight: 700; text-align: center; }
+.cell-mid  { background: var(--yellow-100); color: var(--yellow-600); font-weight: 700; text-align: center; }
+.cell-high { background: var(--red-100); color: var(--red-600); font-weight: 700; text-align: center; }
+
+.recommend {
+  margin-top: 0.6em;
+  background: var(--green-800);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.6em 0.9em;
+  font-size: 0.55em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.recommend strong { color: var(--green-200); }
+
+/* ---------- Slide 5: deliverable columns ---------- */
+.deliverables {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5em;
+  height: 100%;
+}
+.deliverables .col { display: flex; flex-direction: column; gap: 0.4em; }
+.deliverables .col-head {
+  background: var(--green-700);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.55em 0.6em;
+  font-size: 0.52em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
+  min-height: 3.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deliverables .item {
+  background: var(--green-100);
+  border: 1px solid var(--green-200);
+  border-radius: 6px;
+  padding: 0.45em 0.5em 0.45em 1.9em;
+  font-size: 0.46em;
+  line-height: 1.25;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.deliverables .item .n {
+  position: absolute;
+  left: 0.45em;
+  top: 0.45em;
+  width: 1.3em; height: 1.3em;
+  background: var(--green-600);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.85em;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700;
+}
+
+/* ---------- Slide 7: schedule table ---------- */
+.schedule-wrap { height: 100%; overflow: auto; }
+.reveal table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.42em;
+}
+.reveal table.schedule th,
+.reveal table.schedule td {
+  border: 1px solid var(--gray-300);
+  padding: 0.35em 0.5em;
+}
+.reveal table.schedule thead th {
+  background: var(--green-800);
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+.reveal table.schedule tbody tr:nth-child(even) { background: var(--green-100); }
+.reveal table.schedule td.tag {
+  font-weight: 700;
+  color: var(--green-700);
+  text-align: center;
+}
+.reveal table.schedule td.num { text-align: right; }
+.schedule-legend {
+  margin-top: 0.4em;
+  font-size: 0.42em;
+  color: var(--gray-700);
+}
+
+/* ---------- Slide 6 placeholder ---------- */
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 3px dashed var(--green-500);
+  border-radius: 12px;
+  color: var(--green-700);
+  background: var(--green-100);
+  text-align: center;
+}
+.placeholder .big { font-size: 1.4em; font-weight: 700; }
+.placeholder .hint { font-size: 0.6em; color: var(--gray-700); margin-top: 0.6em; }
