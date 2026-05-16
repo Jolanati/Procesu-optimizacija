@@ -1,5 +1,6 @@
 # pagaidu / temp
 _pptx_tmp/
+*.bak
 .vercel
 .DS_Store
 Thumbs.db

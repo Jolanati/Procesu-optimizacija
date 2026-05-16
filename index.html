@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
-  <!-- Reveal.js no CDN (nav nepieciešams build solis) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
   <link rel="stylesheet" href="css/theme.css">
@@ -31,115 +30,86 @@
       </div>
     </section>
 
-    <!-- ============ SLAIDS 1: Mērķa sadalījums ============ -->
+    <!-- ============ 1A: Mērķis → programmas ============ -->
     <section>
       <h2 class="slide-title"><span class="chip">1</span>Mērķa sadalījums un pamatprogrammas</h2>
-      <div class="diagram">
-
-        <div class="center">
-          <div class="box box--goal">
-            <div class="box-title">MĒRĶIS</div>
-            Samazināt darbaspēka izmaksu pieaugumu un palielināt darbinieku
-            produktivitāti līdz 2027. gada jūlijam.
-          </div>
+      <div class="flow">
+        <div class="node node--goal">
+          <div class="lbl">MĒRĶIS</div>
+          <div class="txt">Samazināt darbaspēka izmaksu pieaugumu un palielināt darbinieku produktivitāti līdz 2027.&nbsp;gada jūlijam</div>
         </div>
-        <div class="connector">▼</div>
-        <div class="center">
-          <div class="box box--program">
-            <div class="box-title">Galvenā programma</div>
-            Darbinieku produktivitātes un procesu optimizācijas programma
-          </div>
+        <div class="arrow">▼</div>
+        <div class="node node--prog">
+          <div class="lbl">GALVENĀ PROGRAMMA</div>
+          <div class="txt">Darbinieku produktivitātes un procesu optimizācijas programma</div>
         </div>
-        <div class="connector">▼</div>
-
-        <div class="columns">
-          <!-- 1 -->
-          <div class="column">
-            <div class="box box--solution">
-              <div class="box-title">1. Procesu optimizācijas vadība</div>
-              <ul>
-                <li>Procesu kartēšana un standartizācija</li>
-                <li>Manuālo darbību samazināšana</li>
-                <li>KPI monitorings</li>
-              </ul>
-            </div>
-            <div class="box box--problem">
-              <div class="box-title">Problēma</div>
-              Liels manuālo darbību apjoms, nesakārtoti procesi
-            </div>
-            <div class="box box--cause">
-              <div class="box-title">Cēlonis</div>
-              Procesu dublēšanās un automatizācijas trūkums
-            </div>
+        <div class="arrow">▼</div>
+        <div class="progs">
+          <div class="prog-card">
+            <div class="pc-head"><span class="pc-num">1</span>Procesu optimizācijas vadība</div>
+            <ul>
+              <li>Procesu kartēšana un standartizācija</li>
+              <li>Manuālo darbību samazināšana</li>
+              <li>KPI monitorings</li>
+            </ul>
           </div>
-          <!-- 2 -->
-          <div class="column">
-            <div class="box box--solution">
-              <div class="box-title">2. Darbinieku motivācijas programma</div>
-              <ul>
-                <li>Lojalitātes programma</li>
-                <li>Bonusu un KPI sistēma</li>
-                <li>Iesaistes aktivitātes</li>
-              </ul>
-            </div>
-            <div class="box box--problem">
-              <div class="box-title">Problēma</div>
-              Motivācijas kritums un augsta darbinieku mainība
-            </div>
-            <div class="box box--cause">
-              <div class="box-title">Cēlonis</div>
-              Nepietiekama motivācijas sistēma un pārslodze
-            </div>
+          <div class="prog-card">
+            <div class="pc-head"><span class="pc-num">2</span>Darbinieku motivācijas programma</div>
+            <ul>
+              <li>Lojalitātes programma</li>
+              <li>Bonusu un KPI sistēma</li>
+              <li>Iesaistes aktivitātes</li>
+            </ul>
           </div>
-          <!-- 3 -->
-          <div class="column">
-            <div class="box box--solution">
-              <div class="box-title">3. Kompetenču attīstības programma</div>
-              <ul>
-                <li>Kompetenču novērtēšanas rīks</li>
-                <li>Apmācību programma</li>
-                <li>Digitālo prasmju attīstība</li>
-              </ul>
-            </div>
-            <div class="box box--problem">
-              <div class="box-title">Problēma</div>
-              Kompetenču trūkums un zema efektivitāte
-            </div>
-            <div class="box box--cause">
-              <div class="box-title">Cēlonis</div>
-              Nepietiekamas prasmes un jaunu uzdevumu slogs
-            </div>
+          <div class="prog-card">
+            <div class="pc-head"><span class="pc-num">3</span>Kompetenču attīstības programma</div>
+            <ul>
+              <li>Kompetenču novērtēšanas rīks</li>
+              <li>Apmācību programma</li>
+              <li>Digitālo prasmju attīstība</li>
+            </ul>
           </div>
-          <!-- 4 -->
-          <div class="column">
-            <div class="box box--solution">
-              <div class="box-title">4. Produktivitātes un KPI pārvaldības sistēma</div>
-              <ul>
-                <li>KPI dashboard izstrāde</li>
-                <li>Produktivitātes monitorings</li>
-                <li>Veiktspējas analītika</li>
-              </ul>
-            </div>
-            <div class="box box--problem">
-              <div class="box-title">Problēma</div>
-              Pieaugošas izmaksas un zema darba efektivitāte
-            </div>
-            <div class="box box--cause">
-              <div class="box-title">Cēlonis</div>
-              Nepietiekama datu analīze un KPI uzraudzība
-            </div>
+          <div class="prog-card">
+            <div class="pc-head"><span class="pc-num">4</span>Produktivitātes un KPI pārvaldība</div>
+            <ul>
+              <li>KPI dashboard izstrāde</li>
+              <li>Produktivitātes monitorings</li>
+              <li>Veiktspējas analītika</li>
+            </ul>
           </div>
-        </div>
-
-        <div class="legend">
-          <span><i class="l-solution"></i> Risinājums / programma</span>
-          <span><i class="l-problem"></i> Problēmas apraksts</span>
-          <span><i class="l-cause"></i> Cēlonis</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ SLAIDS 2: Izvēlētā risinājuma pamatojums ============ -->
+    <!-- ============ 1B: Problēmas un cēloņi ============ -->
+    <section>
+      <h2 class="slide-title"><span class="chip">1</span>Problēmas un cēloņi pa programmām
+        <span class="cont">Turpinājums</span></h2>
+      <div class="pc-grid">
+        <div class="pc-row">
+          <div class="pc-prog"><div class="t">1 · Procesu optimizācijas vadība</div></div>
+          <div class="pc-prob"><div class="cap">Problēma</div><div class="x">Liels manuālo darbību apjoms, nesakārtoti procesi</div></div>
+          <div class="pc-cause"><div class="cap">Cēlonis</div><div class="x">Procesu dublēšanās un automatizācijas trūkums</div></div>
+        </div>
+        <div class="pc-row">
+          <div class="pc-prog"><div class="t">2 · Darbinieku motivācijas programma</div></div>
+          <div class="pc-prob"><div class="cap">Problēma</div><div class="x">Motivācijas kritums un augsta darbinieku mainība</div></div>
+          <div class="pc-cause"><div class="cap">Cēlonis</div><div class="x">Nepietiekama motivācijas sistēma un pārslodze</div></div>
+        </div>
+        <div class="pc-row">
+          <div class="pc-prog"><div class="t">3 · Kompetenču attīstības programma</div></div>
+          <div class="pc-prob"><div class="cap">Problēma</div><div class="x">Kompetenču trūkums un zema efektivitāte</div></div>
+          <div class="pc-cause"><div class="cap">Cēlonis</div><div class="x">Nepietiekamas prasmes un jaunu uzdevumu slogs</div></div>
+        </div>
+        <div class="pc-row">
+          <div class="pc-prog"><div class="t">4 · Produktivitātes un KPI pārvaldība</div></div>
+          <div class="pc-prob"><div class="cap">Problēma</div><div class="x">Pieaugošas izmaksas un zema darba efektivitāte</div></div>
+          <div class="pc-cause"><div class="cap">Cēlonis</div><div class="x">Nepietiekama datu analīze un KPI uzraudzība</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2: Izvēlētā risinājuma pamatojums ============ -->
     <section>
       <h2 class="slide-title"><span class="chip">2</span>Izvēlētā risinājuma pamatojums</h2>
       <div class="table-card">
@@ -207,9 +177,10 @@
       </div>
     </section>
 
-    <!-- ============ SLAIDS 3: Project Brief (apvienots) ============ -->
+    <!-- ============ 3A: Project Brief — pamati ============ -->
     <section>
-      <h2 class="slide-title"><span class="chip">3</span>Projekta apraksts <span style="font-weight:400;color:var(--gray-700);font-size:.7em">(Project Brief)</span></h2>
+      <h2 class="slide-title"><span class="chip">3</span>Projekta apraksts — pamati
+        <span style="font-weight:400;color:var(--gray-700);font-size:.5em;margin-left:.6em">(Project Brief)</span></h2>
       <div class="brief">
         <div class="field wide accent">
           <span class="k">Projekta nosaukums / produkts</span>
@@ -231,6 +202,14 @@
           <span class="k">Rezultāts</span>
           <span class="v">Īsāks izpildes laiks un izmaksas, augstāka produktivitāte un kvalitāte, mazāk kļūdu, standartizēti procesi, KPI uzraudzība.</span>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ 3B: Project Brief — organizācija & kvalitāte ============ -->
+    <section>
+      <h2 class="slide-title"><span class="chip">3</span>Projekta apraksts — organizācija un kvalitāte
+        <span class="cont">Turpinājums</span></h2>
+      <div class="brief">
         <div class="field">
           <span class="k">Komanda</span>
           <span class="v">Sponsors, projekta vadītājs, procesu optimizācijas speciālisti, IT/datu analītika, HR, biznesa un risku pārstāvji.</span>
@@ -258,156 +237,168 @@
       </div>
     </section>
 
-    <!-- ============ SLAIDS 5: P1 Deliverable rezultāti ============ -->
+    <!-- ============ 4A: Deliverables P1_1–P1_3 ============ -->
     <section>
-      <h2 class="slide-title"><span class="chip">4</span>P1: Procesu optimizācijas programma — Deliverable rezultāti</h2>
-      <div class="deliverables">
+      <h2 class="slide-title"><span class="chip">4</span>P1 — Deliverable rezultāti (1/2)</h2>
+      <div class="deliverables c3">
         <div class="col">
           <div class="col-head"><b>P1_1</b>Esošo procesu kartēšana</div>
           <div class="item"><span class="n">1</span>Kritisko biznesa procesu saraksts</div>
-          <div class="item"><span class="n">2</span>Procesos iesaistīto lomu un atbildību matrica</div>
-          <div class="item"><span class="n">3</span>Esošo procesu plūsmas diagrammas (As-Is)</div>
-          <div class="item"><span class="n">4</span>Izmantoto sistēmu un rīku inventarizācijas pārskats</div>
-          <div class="item"><span class="n">5</span>Esošo KPI un procesa izpildes laiku analīzes atskaite</div>
+          <div class="item"><span class="n">2</span>Lomu un atbildību matrica</div>
+          <div class="item"><span class="n">3</span>Esošo procesu plūsmas (As-Is)</div>
+          <div class="item"><span class="n">4</span>Sistēmu un rīku inventarizācija</div>
+          <div class="item"><span class="n">5</span>Esošo KPI un izpildes laiku analīze</div>
         </div>
         <div class="col">
           <div class="col-head"><b>P1_2</b>Neefektīvo procesu identificēšana</div>
-          <div class="item"><span class="n">1</span>Procesu izpildes laiku analīzes ziņojums</div>
-          <div class="item"><span class="n">2</span>Manuālo darbību identificēšanas pārskats</div>
-          <div class="item"><span class="n">3</span>Procesu dublēšanās un pārklāšanās matrica</div>
-          <div class="item"><span class="n">4</span>Kļūdu un incidentu biežuma analīzes atskaite</div>
-          <div class="item"><span class="n">5</span>“Bottleneck” punktu identificēšanas ziņojums</div>
+          <div class="item"><span class="n">1</span>Procesu izpildes laiku ziņojums</div>
+          <div class="item"><span class="n">2</span>Manuālo darbību identificēšana</div>
+          <div class="item"><span class="n">3</span>Dublēšanās un pārklāšanās matrica</div>
+          <div class="item"><span class="n">4</span>Kļūdu un incidentu analīze</div>
+          <div class="item"><span class="n">5</span>“Bottleneck” punktu ziņojums</div>
         </div>
         <div class="col">
           <div class="col-head"><b>P1_3</b>Manuālo darbību samazināšanas plāns</div>
           <div class="item"><span class="n">1</span>Automatizējamo procesu saraksts</div>
           <div class="item"><span class="n">2</span>Automatizācijas prioritāšu matrica</div>
-          <div class="item"><span class="n">3</span>Tehnoloģisko risinājumu izvērtējuma dokuments</div>
-          <div class="item"><span class="n">4</span>Automatizācijas ieviešanas ceļa karte (roadmap)</div>
-          <div class="item"><span class="n">5</span>Sagaidāmo efektivitātes ieguvumu aprēķins</div>
+          <div class="item"><span class="n">3</span>Tehnoloģisko risinājumu izvērtējums</div>
+          <div class="item"><span class="n">4</span>Automatizācijas ceļa karte (roadmap)</div>
+          <div class="item"><span class="n">5</span>Efektivitātes ieguvumu aprēķins</div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ 4B: Deliverables P1_4–P1_5 ============ -->
+    <section>
+      <h2 class="slide-title"><span class="chip">4</span>P1 — Deliverable rezultāti (2/2)
+        <span class="cont">Turpinājums</span></h2>
+      <div class="deliverables c2">
         <div class="col">
           <div class="col-head"><b>P1_4</b>Standartizētu procesu izstrāde</div>
           <div class="item"><span class="n">1</span>Optimizēto procesu modeļi (To-Be)</div>
-          <div class="item"><span class="n">2</span>Atbildību un lomu sadalījuma matrica (RACI)</div>
-          <div class="item"><span class="n">3</span>Kontroles punktu un pārbaudes mehānismu katalogs</div>
+          <div class="item"><span class="n">2</span>Atbildību un lomu matrica (RACI)</div>
+          <div class="item"><span class="n">3</span>Kontroles punktu un pārbaudes katalogs</div>
           <div class="item"><span class="n">4</span>Procesu eskalācijas kārtības apraksts</div>
-          <div class="item"><span class="n">5</span>Procesu dokumentācijas un instrukciju pakotne</div>
+          <div class="item"><span class="n">5</span>Procesu dokumentācijas pakotne</div>
         </div>
         <div class="col">
-          <div class="col-head"><b>P1_5</b>KPI un procesu efektivitātes metriku definēšana</div>
+          <div class="col-head"><b>P1_5</b>KPI un efektivitātes metriku definēšana</div>
           <div class="item"><span class="n">1</span>Produktivitātes KPI katalogs</div>
           <div class="item"><span class="n">2</span>Kvalitātes KPI definīciju dokuments</div>
           <div class="item"><span class="n">3</span>Izmaksu samazināšanas KPI pārskats</div>
           <div class="item"><span class="n">4</span>KPI monitoringa dashboard prototips</div>
-          <div class="item"><span class="n">5</span>KPI pārskatīšanas un uzraudzības cikla metodoloģija</div>
+          <div class="item"><span class="n">5</span>KPI uzraudzības cikla metodoloģija</div>
         </div>
       </div>
     </section>
 
-    <!-- ============ SLAIDS 6: Riska novērtējums ============ -->
+    <!-- ============ 5A: Riska novērtējums — draudi ============ -->
     <section>
-      <h2 class="slide-title"><span class="chip">5</span>Riska novērtējums — P1: Procesu optimizācijas programma</h2>
-      <div class="table-scroll">
-        <table class="risk">
-          <thead>
-            <tr>
-              <th style="width:7%">Riska veids</th>
-              <th style="width:12%">Kategorija</th>
-              <th style="width:21%">Apraksts</th>
-              <th style="width:9%">Varbūtība</th>
-              <th style="width:9%">Ietekme</th>
-              <th style="width:10%">Riska iedarbība</th>
-              <th style="width:8%">Plānotā darbība</th>
-              <th style="width:24%">Plānotās darbības apraksts</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="badge badge-threat">Draudi</span></td>
-              <td>P1_1: Esošo procesu kartēšana</td>
-              <td>Procesu īpašnieki nav pieejami vai nesadarbojas intervijās un procesu aprakstīšanā, tādēļ kartēšana var būt nepilnīga vai neprecīza.</td>
-              <td class="p-high">Augsta <small>3 / 60%</small></td>
-              <td class="p-med">Vidēja <small>3 / 15k €</small></td>
-              <td class="p-high">3 × 3 = 9 <small>(9k €)</small></td>
-              <td>Novērst</td>
-              <td>Nodrošināt vadības iesaisti, lai apstiprinātu procesu īpašnieku dalību. Iekļaut kartēšanas darba sesijas darba kārtībā kā obligātas. Sagatavot iepriekšējas anketas, lai mazinātu laika slodzi tikšanās laikā.</td>
-            </tr>
-            <tr>
-              <td><span class="badge badge-threat">Draudi</span></td>
-              <td>P1_2: Neefektīvo procesu identificēšana</td>
-              <td>Procesu analīze tiek veikta bez pietiekamiem sistēmu datiem (izpildes laiki, kļūdu biežums), tāpēc secinājumi var būt subjektīvi un neatbalstīti ar skaitļiem.</td>
-              <td class="p-med">Vidēja <small>3 / 60%</small></td>
-              <td class="p-high">Augsta <small>4 / 25k €</small></td>
-              <td class="p-high">3 × 4 = 12 <small>(15k €)</small></td>
-              <td>Mazināt</td>
-              <td>Pirms analīzes fāzes apzināt pieejamos datu avotus (core banking, CRM, HR sistēmas). Ja dati nav pieejami sistēmu līmenī, paredzēt resursu manuālai datu vākšanai un iekļaut šo piepūli laika plānā.</td>
-            </tr>
-            <tr>
-              <td><span class="badge badge-threat">Draudi</span></td>
-              <td>P1_3: Manuālo darbību samazināšanas plāns</td>
-              <td>Automatizācijas risinājumi (RPA, API integrācijas) nav tehniski realizējami esošajā IT arhitektūrā, tāpēc automatizācijas ceļa karte var būt nereālistiska.</td>
-              <td class="p-med">Vidēja <small>3 / 60%</small></td>
-              <td class="p-high">Augsta <small>4 / 30k €</small></td>
-              <td class="p-high">3 × 4 = 12 <small>(18k €)</small></td>
-              <td>Mazināt</td>
-              <td>IT arhitektūras komanda piedalās risinājumu izvērtēšanā jau plānošanas fāzē. Katram automatizācijas kandidātam veikt tehnisku priekšizpēti pirms iekļaušanas ceļa kartē. Paredzēt alternatīvas pieejas (daļēja automatizācija, Excel makro) kā rezerves variantus.</td>
-            </tr>
-            <tr>
-              <td><span class="badge badge-threat">Draudi</span></td>
-              <td>P1_4: Standartizētu procesu izstrāde</td>
-              <td>Darbinieki pretojas jauno standartizēto procesu ieviešanai, jo izmaiņas skar esošos darba ieradumus un uztverto autonomiju. Risks īpaši aktuāls nodaļās ar augstu darba stāžu.</td>
-              <td class="p-high">Augsta <small>4 / 80%</small></td>
-              <td class="p-med">Vidēja <small>3 / 20k €</small></td>
-              <td class="p-high">4 × 3 = 12 <small>(16k €)</small></td>
-              <td>Mazināt</td>
-              <td>Iesaistīt galvenos darbiniekus procesu izstrādes darba grupās, nevis informēt tikai par gatavajiem rezultātiem. Skaidri komunicēt izmaiņu mērķi un ieguvumus. Nodrošināt vadītāju atbalstu un apmācības pirms jauno procesu laišanas darbā.</td>
-            </tr>
-            <tr>
-              <td><span class="badge badge-threat">Draudi</span></td>
-              <td>P1_5: KPI un metriku definēšana</td>
-              <td>Definētie KPI nav izmērāmi ar esošajiem sistēmu rīkiem, tāpēc KPI monitoringa panelis paliek tikai prototipa līmenī bez reālas datu padeves.</td>
-              <td class="p-med">Vidēja <small>3 / 60%</small></td>
-              <td class="p-high">Augsta <small>4 / 20k €</small></td>
-              <td class="p-high">3 × 4 = 12 <small>(12k €)</small></td>
-              <td>Novērst</td>
-              <td>Katru KPI pārbaudīt pret pieejamiem datu avotiem definēšanas fāzē. Ja dati nav pieejami, KPI iekļaut kā "nākotnes metrika" ar skaidru datu pieejamības uzlabošanas plānu. Datu un IT komandas iesaiste KPI apstiprināšanā.</td>
-            </tr>
-            <tr>
-              <td><span class="badge badge-opp">Iespēja</span></td>
-              <td>P1_1: Esošo procesu kartēšana</td>
-              <td>Procesu kartēšanas laikā var tikt identificēti papildu ietaupījumu potenciāla avoti ārpus sākotnēji plānotā satura, paplašinot programmas ietekmi.</td>
-              <td class="p-med">Vidēja <small>3 / 50%</small></td>
-              <td class="p-med">Vidēja–Augsta <small>3 / 30k €</small></td>
-              <td class="p-med">3 × 3 = 9 <small>(15k €)</small></td>
-              <td>Izmantot</td>
-              <td>Izveidot reģistru ārpus tvēruma atklājumiem (out-of-scope findings), ko nodot izskatīšanai P2 programmā vai kā atsevišķus uzlabojumu projektus. Informēt vadību par papildu iespējām jau P1 starpziņojumā.</td>
-            </tr>
-            <tr>
-              <td><span class="badge badge-threat">Draudi</span></td>
-              <td>P1_2 + P1_3: Analīze un automatizācijas plāns</td>
-              <td>Programmas laika ierobežojumu dēļ analīze un automatizācijas plānošana tiek veikta paralēli, radot risku, ka lēmumi par automatizāciju tiek pieņemti pirms analīzes ir pabeigta.</td>
-              <td class="p-med">Vidēja <small>3 / 50%</small></td>
-              <td class="p-med">Vidēja <small>3 / 15k €</small></td>
-              <td class="p-med">3 × 3 = 9 <small>(7.5k €)</small></td>
-              <td>Mazināt</td>
-              <td>Definēt skaidrus fāžu vārtus (stage gates) starp P1_2 un P1_3. Nodrošināt, ka automatizācijas prioritizācijas matrica tiek pabeigta tikai pēc neefektivitāšu identificēšanas pārskata apstiprināšanas. Pārskatīt laika plānu, ja nepieciešams.</td>
-            </tr>
-          </tbody>
-        </table>
+      <h2 class="slide-title"><span class="chip">5</span>Riska novērtējums — galvenie draudi</h2>
+      <div class="risk-grid">
+        <div class="risk-card threat">
+          <div class="rc-head"><span class="badge badge-threat">Draudi</span><span class="rc-wp">P1_1 · Procesu kartēšana</span></div>
+          <div class="rc-desc">Procesu īpašnieki nav pieejami vai nesadarbojas intervijās — kartēšana var būt nepilnīga vai neprecīza.</div>
+          <div class="rc-metrics">
+            <div class="pill lv-high"><span class="pl">Varbūtība</span><span class="pv">Augsta</span></div>
+            <div class="pill lv-med"><span class="pl">Ietekme</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-high"><span class="pl">Iedarbība</span><span class="pv">9 · 9k €</span></div>
+          </div>
+          <div class="rc-resp"><b>Novērst:</b> vadības iesaiste īpašnieku dalības apstiprināšanai; obligātas kartēšanas darba sesijas; iepriekšējas anketas slodzes mazināšanai.</div>
+        </div>
+
+        <div class="risk-card threat">
+          <div class="rc-head"><span class="badge badge-threat">Draudi</span><span class="rc-wp">P1_2 · Neefektīvo procesu identificēšana</span></div>
+          <div class="rc-desc">Analīze bez pietiekamiem sistēmu datiem (izpildes laiki, kļūdas) — secinājumi var būt subjektīvi.</div>
+          <div class="rc-metrics">
+            <div class="pill lv-med"><span class="pl">Varbūtība</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-high"><span class="pl">Ietekme</span><span class="pv">Augsta</span></div>
+            <div class="pill lv-high"><span class="pl">Iedarbība</span><span class="pv">12 · 15k €</span></div>
+          </div>
+          <div class="rc-resp"><b>Mazināt:</b> apzināt datu avotus (core banking, CRM, HR); ja datu nav — paredzēt resursu manuālai datu vākšanai laika plānā.</div>
+        </div>
+
+        <div class="risk-card threat">
+          <div class="rc-head"><span class="badge badge-threat">Draudi</span><span class="rc-wp">P1_3 · Manuālo darbību samazināšana</span></div>
+          <div class="rc-desc">Automatizācijas risinājumi (RPA, API) nav tehniski realizējami esošajā IT arhitektūrā — ceļa karte nereālistiska.</div>
+          <div class="rc-metrics">
+            <div class="pill lv-med"><span class="pl">Varbūtība</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-high"><span class="pl">Ietekme</span><span class="pv">Augsta</span></div>
+            <div class="pill lv-high"><span class="pl">Iedarbība</span><span class="pv">12 · 18k €</span></div>
+          </div>
+          <div class="rc-resp"><b>Mazināt:</b> IT arhitektūra iesaistīta jau plānošanā; tehniska priekšizpēte katram kandidātam; rezerves varianti (daļēja automatizācija).</div>
+        </div>
+
+        <div class="risk-card threat">
+          <div class="rc-head"><span class="badge badge-threat">Draudi</span><span class="rc-wp">P1_4 · Standartizētu procesu izstrāde</span></div>
+          <div class="rc-desc">Darbinieki pretojas jaunajiem procesiem — īpaši nodaļās ar augstu darba stāžu.</div>
+          <div class="rc-metrics">
+            <div class="pill lv-high"><span class="pl">Varbūtība</span><span class="pv">Augsta</span></div>
+            <div class="pill lv-med"><span class="pl">Ietekme</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-high"><span class="pl">Iedarbība</span><span class="pv">12 · 16k €</span></div>
+          </div>
+          <div class="rc-resp"><b>Mazināt:</b> galvenos darbiniekus iesaistīt darba grupās; skaidri komunicēt ieguvumus; vadītāju atbalsts un apmācības pirms ieviešanas.</div>
+        </div>
       </div>
-      <div class="slide-note"><b>Riska iedarbība</b> = Varbūtība × Ietekme (skala 1–5) jeb sagaidāmā naudas vērtība (€).</div>
     </section>
 
-    <!-- ============ SLAIDS 7: Posma plāns ============ -->
+    <!-- ============ 5B: Riska novērtējums — pārējie ============ -->
     <section>
-      <h2 class="slide-title"><span class="chip">6</span>Posma plāna izstrāde — P1 Procesu optimizācijas programma</h2>
-      <div class="table-scroll">
+      <h2 class="slide-title"><span class="chip">5</span>Riska novērtējums — pārējie riski un iespējas
+        <span class="cont">Turpinājums</span></h2>
+      <div class="risk-grid">
+        <div class="risk-card threat">
+          <div class="rc-head"><span class="badge badge-threat">Draudi</span><span class="rc-wp">P1_5 · KPI un metriku definēšana</span></div>
+          <div class="rc-desc">Definētie KPI nav izmērāmi ar esošajiem rīkiem — monitoringa panelis paliek prototipa līmenī bez datu padeves.</div>
+          <div class="rc-metrics">
+            <div class="pill lv-med"><span class="pl">Varbūtība</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-high"><span class="pl">Ietekme</span><span class="pv">Augsta</span></div>
+            <div class="pill lv-high"><span class="pl">Iedarbība</span><span class="pv">12 · 12k €</span></div>
+          </div>
+          <div class="rc-resp"><b>Novērst:</b> katru KPI pārbaudīt pret datu avotiem; ja datu nav — iekļaut kā “nākotnes metriku” ar datu uzlabošanas plānu.</div>
+        </div>
+
+        <div class="risk-card opp">
+          <div class="rc-head"><span class="badge badge-opp">Iespēja</span><span class="rc-wp">P1_1 · Procesu kartēšana</span></div>
+          <div class="rc-desc">Kartēšanas laikā var atklāties papildu ietaupījumu avoti ārpus sākotnējā tvēruma — plašāka programmas ietekme.</div>
+          <div class="rc-metrics">
+            <div class="pill lv-med"><span class="pl">Varbūtība</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-med"><span class="pl">Ietekme</span><span class="pv">Vidēja+</span></div>
+            <div class="pill lv-med"><span class="pl">Iedarbība</span><span class="pv">9 · 15k €</span></div>
+          </div>
+          <div class="rc-resp"><b>Izmantot:</b> reģistrs ārpus tvēruma atklājumiem → nodod P2 programmai; informēt vadību jau P1 starpziņojumā.</div>
+        </div>
+
+        <div class="risk-card threat">
+          <div class="rc-head"><span class="badge badge-threat">Draudi</span><span class="rc-wp">P1_2 + P1_3 · Analīze & automatizācija</span></div>
+          <div class="rc-desc">Laika ierobežojumu dēļ analīze un automatizācijas plānošana notiek paralēli — lēmumi pirms analīze pabeigta.</div>
+          <div class="rc-metrics">
+            <div class="pill lv-med"><span class="pl">Varbūtība</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-med"><span class="pl">Ietekme</span><span class="pv">Vidēja</span></div>
+            <div class="pill lv-med"><span class="pl">Iedarbība</span><span class="pv">9 · 7.5k €</span></div>
+          </div>
+          <div class="rc-resp"><b>Mazināt:</b> definēt fāžu vārtus (stage gates) starp P1_2 un P1_3; prioritāšu matrica tikai pēc analīzes apstiprināšanas.</div>
+        </div>
+
+        <div class="risk-card" style="border-left-color:var(--green-700);background:var(--green-050);justify-content:center">
+          <div class="rc-head"><span class="badge badge-opp">Skala</span></div>
+          <div class="rc-desc" style="flex:0">
+            <b>Riska iedarbība</b> = Varbūtība × Ietekme (1–5) jeb sagaidāmā naudas vērtība (€).
+            Visi P1 draudi atrodas vidējā–augstā zonā (iedarbība 9–12) un tiek aktīvi pārvaldīti.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6A: Posma plāns P1_1–P1_2 ============ -->
+    <section>
+      <h2 class="slide-title"><span class="chip">6</span>Posma plāna izstrāde — P1_1 / P1_2</h2>
+      <div class="sched-card">
         <table class="schedule">
           <thead>
             <tr>
-              <th>Produkts</th><th>Aktivitāte</th><th>Sākums</th>
-              <th>Beigas</th><th>Stundas</th><th>Izmaksas (€)</th><th>Atbildīgais</th>
+              <th style="width:9%">Produkts</th><th>Aktivitāte</th><th style="width:9%">Sākums</th>
+              <th style="width:9%">Beigas</th><th style="width:10%">Stundas</th><th style="width:13%">Izmaksas (€)</th><th style="width:11%">Atbildīgais</th>
             </tr>
           </thead>
           <tbody>
@@ -420,6 +411,29 @@
             <tr><td class="tag">P1_2</td><td>Manuālo darbību pārskats</td><td>19.06</td><td>22.06</td><td class="num">18</td><td class="num">900</td><td>OA</td></tr>
             <tr><td class="tag">P1_2</td><td>Dublēšanās matrica</td><td>23.06</td><td>30.06</td><td class="num">24</td><td class="num">1200</td><td>PL</td></tr>
             <tr><td class="tag">P1_2</td><td>Bottleneck ziņojums</td><td>24.06</td><td>30.06</td><td class="num">16</td><td class="num">800</td><td>PL</td></tr>
+            <tr class="total"><td colspan="4">Starpsumma · P1_1 + P1_2</td><td class="num">156</td><td class="num">7 800</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="schedule-legend">
+        <strong>Produkti:</strong> P1_1 – Esošo procesu kartēšana · P1_2 – Neefektīvo procesu identificēšana &nbsp;|&nbsp;
+        <strong>Lomas:</strong> BA biznesa analītiķis · HR personāls · PA procesu analītiķis · IT IT spec. · DA datu analītiķis · PL procesu līderis · OA operāciju analītiķis
+      </div>
+    </section>
+
+    <!-- ============ 6B: Posma plāns P1_3–P1_5 ============ -->
+    <section>
+      <h2 class="slide-title"><span class="chip">6</span>Posma plāna izstrāde — P1_3 / P1_4 / P1_5
+        <span class="cont">Turpinājums</span></h2>
+      <div class="sched-card">
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th style="width:9%">Produkts</th><th>Aktivitāte</th><th style="width:9%">Sākums</th>
+              <th style="width:9%">Beigas</th><th style="width:10%">Stundas</th><th style="width:13%">Izmaksas (€)</th><th style="width:11%">Atbildīgais</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr><td class="tag">P1_3</td><td>Automatizējamo procesu saraksts</td><td>01.07</td><td>05.07</td><td class="num">20</td><td class="num">1200</td><td>AL</td></tr>
             <tr><td class="tag">P1_3</td><td>Automatizācijas prioritātes</td><td>06.07</td><td>10.07</td><td class="num">24</td><td class="num">1400</td><td>AL</td></tr>
             <tr><td class="tag">P1_3</td><td>Tehnoloģiju izvērtējums</td><td>11.07</td><td>15.07</td><td class="num">24</td><td class="num">1500</td><td>IT</td></tr>
@@ -431,16 +445,13 @@
             <tr><td class="tag">P1_5</td><td>Produktivitātes KPI</td><td>16.08</td><td>18.08</td><td class="num">16</td><td class="num">800</td><td>DA</td></tr>
             <tr><td class="tag">P1_5</td><td>Kvalitātes KPI</td><td>19.08</td><td>22.08</td><td class="num">16</td><td class="num">800</td><td>QL</td></tr>
             <tr><td class="tag">P1_5</td><td>Dashboard prototips</td><td>23.08</td><td>30.08</td><td class="num">32</td><td class="num">2000</td><td>BI</td></tr>
+            <tr class="total"><td colspan="4">Starpsumma · P1_3 + P1_4 + P1_5</td><td class="num">256</td><td class="num">14 700</td><td></td></tr>
           </tbody>
         </table>
       </div>
       <div class="schedule-legend">
-        <strong>Produktu skaidrojums:</strong>
-        P1_1 – Esošo procesu kartēšana ·
-        P1_2 – Neefektīvo procesu identificēšana ·
-        P1_3 – Manuālo darbību samazināšanas plāns ·
-        P1_4 – Standartizētu procesu izstrāde ·
-        P1_5 – KPI un procesu efektivitātes metriku definēšana
+        <strong>Kopā P1:</strong> 412 stundas · 22 500 € &nbsp;|&nbsp;
+        <strong>Lomas:</strong> AL automatizācijas līderis · IT IT spec. · PM proj. vadītājs · PA procesu analītiķis · CL atbilstības līderis · Risk risku pārstāvis · Ops operācijas · DA datu analītiķis · QL kvalitātes līderis · BI BI izstrādātājs
       </div>
     </section>
 
