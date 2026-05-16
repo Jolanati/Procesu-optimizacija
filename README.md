@@ -12,7 +12,7 @@ HTML/CSS/JS prezentācija (Reveal.js), gatava izvietošanai Vercel.
 | 3 | Projekta apraksts (Project Brief I) |
 | 4 | Projekta produkti (Project Brief III) |
 | 5 | P1 Deliverable rezultāti |
-| 6 | *(vietturis — avota fails trūkst)* |
+| 6 | Riska novērtējums (draudi / iespējas) |
 | 7 | Posma plāna izstrāde |
 
 ## Lokāla apskate

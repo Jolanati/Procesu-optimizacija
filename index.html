@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RSU PRINCE2 — Procesu optimizācija</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
   <!-- Reveal.js no CDN (nav nepieciešams build solis) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
@@ -15,20 +19,21 @@
   <div class="slides">
 
     <!-- ============ TITLA SLAIDS ============ -->
-    <section>
+    <section data-state="title">
       <div class="title-slide">
         <div class="eyebrow">RSU · PRINCE2 projektu vadība</div>
         <h1>Procesu optimizācijas un produktivitātes uzlabošanas programma</h1>
         <div class="subtitle">Projekta plānošana pēc PRINCE2 metodikas</div>
         <div class="meta">
-          Komanda: Evija Sturmane · Anita Dale · Linda Voskoboinikova · Jolanta Stutane &nbsp;|&nbsp; 2026
+          Komanda: <b>Evija Sturmane</b> · <b>Anita Dale</b> · <b>Linda Voskoboinikova</b> · <b>Jolanta Stutane</b><br>
+          Rīgas Stradiņa universitāte · 2026
         </div>
       </div>
     </section>
 
     <!-- ============ SLAIDS 1: Mērķa sadalījums ============ -->
     <section>
-      <h2 class="slide-title">1. Mērķa sadalījums un pamatprogrammas</h2>
+      <h2 class="slide-title"><span class="chip">1</span>Mērķa sadalījums un pamatprogrammas</h2>
       <div class="diagram">
 
         <div class="center">
@@ -136,7 +141,8 @@
 
     <!-- ============ SLAIDS 2: Izvēlētā risinājuma pamatojums ============ -->
     <section>
-      <h2 class="slide-title">2. Izvēlētā risinājuma pamatojums</h2>
+      <h2 class="slide-title"><span class="chip">2</span>Izvēlētā risinājuma pamatojums</h2>
+      <div class="table-card">
       <table class="grid center">
         <thead>
           <tr>
@@ -187,21 +193,24 @@
           </tr>
         </tbody>
       </table>
+      </div>
       <div class="legend">
         <span><i class="l-solution"></i> Zems — labvēlīgs aspekts</span>
-        <span><i style="background:var(--yellow-100);border:2px solid var(--yellow-600)"></i> Vidējs — neitrāls aspekts</span>
+        <span><i class="l-mid"></i> Vidējs — neitrāls aspekts</span>
         <span><i class="l-cause"></i> Augsts — potenciāli nelabvēlīgs aspekts</span>
       </div>
       <div class="recommend">
-        <strong>Ieteicamais risinājums:</strong>
+        <span class="star">★</span>
+        <div><strong>Ieteicamais risinājums:</strong>
         Procesu optimizācija + Apmācību programma — nodrošina visaugstāko ROI,
-        ilgtspējīgu produktivitātes pieaugumu un pieņemamu riska līmeni.
+        ilgtspējīgu produktivitātes pieaugumu un pieņemamu riska līmeni.</div>
       </div>
     </section>
 
     <!-- ============ SLAIDS 3: Project Brief (I) ============ -->
     <section>
-      <h2 class="slide-title">3. Projekta apraksts (Project Brief I)</h2>
+      <h2 class="slide-title"><span class="chip">3</span>Projekta apraksts <span style="font-weight:400;color:var(--gray-700);font-size:.7em">(Project Brief I)</span></h2>
+      <div class="table-card">
       <table class="grid">
         <tbody>
           <tr><th>Projekta nosaukums</th>
@@ -240,11 +249,13 @@
             risku un atbilstības funkcija, finanšu funkcija.</td></tr>
         </tbody>
       </table>
+      </div>
     </section>
 
     <!-- ============ SLAIDS 4: Project Brief (III) ============ -->
     <section>
-      <h2 class="slide-title">4. Projekta produkti (Project Brief III)</h2>
+      <h2 class="slide-title"><span class="chip">4</span>Projekta produkti <span style="font-weight:400;color:var(--gray-700);font-size:.7em">(Project Brief III)</span></h2>
+      <div class="table-card">
       <table class="grid">
         <tbody>
           <tr><th>Produkts</th>
@@ -265,14 +276,15 @@
             optimizācijas speciālists un uzņēmuma vadība.</td></tr>
         </tbody>
       </table>
+      </div>
     </section>
 
     <!-- ============ SLAIDS 5: P1 Deliverable rezultāti ============ -->
     <section>
-      <h2 class="slide-title">5. P1: Procesu optimizācijas programma — Deliverable rezultāti</h2>
+      <h2 class="slide-title"><span class="chip">5</span>P1: Procesu optimizācijas programma — Deliverable rezultāti</h2>
       <div class="deliverables">
         <div class="col">
-          <div class="col-head">P1_1<br>Esošo procesu kartēšana</div>
+          <div class="col-head"><b>P1_1</b>Esošo procesu kartēšana</div>
           <div class="item"><span class="n">1</span>Kritisko biznesa procesu saraksts</div>
           <div class="item"><span class="n">2</span>Procesos iesaistīto lomu un atbildību matrica</div>
           <div class="item"><span class="n">3</span>Esošo procesu plūsmas diagrammas (As-Is)</div>
@@ -280,7 +292,7 @@
           <div class="item"><span class="n">5</span>Esošo KPI un procesa izpildes laiku analīzes atskaite</div>
         </div>
         <div class="col">
-          <div class="col-head">P1_2<br>Neefektīvo procesu identificēšana</div>
+          <div class="col-head"><b>P1_2</b>Neefektīvo procesu identificēšana</div>
           <div class="item"><span class="n">1</span>Procesu izpildes laiku analīzes ziņojums</div>
           <div class="item"><span class="n">2</span>Manuālo darbību identificēšanas pārskats</div>
           <div class="item"><span class="n">3</span>Procesu dublēšanās un pārklāšanās matrica</div>
@@ -288,7 +300,7 @@
           <div class="item"><span class="n">5</span>“Bottleneck” punktu identificēšanas ziņojums</div>
         </div>
         <div class="col">
-          <div class="col-head">P1_3<br>Manuālo darbību samazināšanas plāns</div>
+          <div class="col-head"><b>P1_3</b>Manuālo darbību samazināšanas plāns</div>
           <div class="item"><span class="n">1</span>Automatizējamo procesu saraksts</div>
           <div class="item"><span class="n">2</span>Automatizācijas prioritāšu matrica</div>
           <div class="item"><span class="n">3</span>Tehnoloģisko risinājumu izvērtējuma dokuments</div>
@@ -296,7 +308,7 @@
           <div class="item"><span class="n">5</span>Sagaidāmo efektivitātes ieguvumu aprēķins</div>
         </div>
         <div class="col">
-          <div class="col-head">P1_4<br>Standartizētu procesu izstrāde</div>
+          <div class="col-head"><b>P1_4</b>Standartizētu procesu izstrāde</div>
           <div class="item"><span class="n">1</span>Optimizēto procesu modeļi (To-Be)</div>
           <div class="item"><span class="n">2</span>Atbildību un lomu sadalījuma matrica (RACI)</div>
           <div class="item"><span class="n">3</span>Kontroles punktu un pārbaudes mehānismu katalogs</div>
@@ -304,7 +316,7 @@
           <div class="item"><span class="n">5</span>Procesu dokumentācijas un instrukciju pakotne</div>
         </div>
         <div class="col">
-          <div class="col-head">P1_5<br>KPI un procesu efektivitātes metriku definēšana</div>
+          <div class="col-head"><b>P1_5</b>KPI un procesu efektivitātes metriku definēšana</div>
           <div class="item"><span class="n">1</span>Produktivitātes KPI katalogs</div>
           <div class="item"><span class="n">2</span>Kvalitātes KPI definīciju dokuments</div>
           <div class="item"><span class="n">3</span>Izmaksu samazināšanas KPI pārskats</div>
@@ -314,21 +326,104 @@
       </div>
     </section>
 
-    <!-- ============ SLAIDS 6: vietturis (avota fails trūkst) ============ -->
+    <!-- ============ SLAIDS 6: Riska novērtējums ============ -->
     <section>
-      <div class="placeholder">
-        <div class="big">6. slaids</div>
-        <div class="hint">
-          Šī slaida avota fails (Slide&nbsp;6) netika atrasts mapē.<br>
-          Pievieno saturu šeit, kad tas būs pieejams.
-        </div>
+      <h2 class="slide-title"><span class="chip">6</span>Riska novērtējums — P1: Procesu optimizācijas programma</h2>
+      <div class="table-scroll">
+        <table class="risk">
+          <thead>
+            <tr>
+              <th style="width:7%">Riska veids</th>
+              <th style="width:12%">Kategorija</th>
+              <th style="width:21%">Apraksts</th>
+              <th style="width:9%">Varbūtība</th>
+              <th style="width:9%">Ietekme</th>
+              <th style="width:10%">Riska iedarbība</th>
+              <th style="width:8%">Plānotā darbība</th>
+              <th style="width:24%">Plānotās darbības apraksts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-threat">Draudi</span></td>
+              <td>P1_1: Esošo procesu kartēšana</td>
+              <td>Procesu īpašnieki nav pieejami vai nesadarbojas intervijās un procesu aprakstīšanā, tādēļ kartēšana var būt nepilnīga vai neprecīza.</td>
+              <td class="p-high">Augsta <small>3 / 60%</small></td>
+              <td class="p-med">Vidēja <small>3 / 15k €</small></td>
+              <td class="p-high">3 × 3 = 9 <small>(9k €)</small></td>
+              <td>Novērst</td>
+              <td>Nodrošināt vadības iesaisti, lai apstiprinātu procesu īpašnieku dalību. Iekļaut kartēšanas darba sesijas darba kārtībā kā obligātas. Sagatavot iepriekšējas anketas, lai mazinātu laika slodzi tikšanās laikā.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-threat">Draudi</span></td>
+              <td>P1_2: Neefektīvo procesu identificēšana</td>
+              <td>Procesu analīze tiek veikta bez pietiekamiem sistēmu datiem (izpildes laiki, kļūdu biežums), tāpēc secinājumi var būt subjektīvi un neatbalstīti ar skaitļiem.</td>
+              <td class="p-med">Vidēja <small>3 / 60%</small></td>
+              <td class="p-high">Augsta <small>4 / 25k €</small></td>
+              <td class="p-high">3 × 4 = 12 <small>(15k €)</small></td>
+              <td>Mazināt</td>
+              <td>Pirms analīzes fāzes apzināt pieejamos datu avotus (core banking, CRM, HR sistēmas). Ja dati nav pieejami sistēmu līmenī, paredzēt resursu manuālai datu vākšanai un iekļaut šo piepūli laika plānā.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-threat">Draudi</span></td>
+              <td>P1_3: Manuālo darbību samazināšanas plāns</td>
+              <td>Automatizācijas risinājumi (RPA, API integrācijas) nav tehniski realizējami esošajā IT arhitektūrā, tāpēc automatizācijas ceļa karte var būt nereālistiska.</td>
+              <td class="p-med">Vidēja <small>3 / 60%</small></td>
+              <td class="p-high">Augsta <small>4 / 30k €</small></td>
+              <td class="p-high">3 × 4 = 12 <small>(18k €)</small></td>
+              <td>Mazināt</td>
+              <td>IT arhitektūras komanda piedalās risinājumu izvērtēšanā jau plānošanas fāzē. Katram automatizācijas kandidātam veikt tehnisku priekšizpēti pirms iekļaušanas ceļa kartē. Paredzēt alternatīvas pieejas (daļēja automatizācija, Excel makro) kā rezerves variantus.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-threat">Draudi</span></td>
+              <td>P1_4: Standartizētu procesu izstrāde</td>
+              <td>Darbinieki pretojas jauno standartizēto procesu ieviešanai, jo izmaiņas skar esošos darba ieradumus un uztverto autonomiju. Risks īpaši aktuāls nodaļās ar augstu darba stāžu.</td>
+              <td class="p-high">Augsta <small>4 / 80%</small></td>
+              <td class="p-med">Vidēja <small>3 / 20k €</small></td>
+              <td class="p-high">4 × 3 = 12 <small>(16k €)</small></td>
+              <td>Mazināt</td>
+              <td>Iesaistīt galvenos darbiniekus procesu izstrādes darba grupās, nevis informēt tikai par gatavajiem rezultātiem. Skaidri komunicēt izmaiņu mērķi un ieguvumus. Nodrošināt vadītāju atbalstu un apmācības pirms jauno procesu laišanas darbā.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-threat">Draudi</span></td>
+              <td>P1_5: KPI un metriku definēšana</td>
+              <td>Definētie KPI nav izmērāmi ar esošajiem sistēmu rīkiem, tāpēc KPI monitoringa panelis paliek tikai prototipa līmenī bez reālas datu padeves.</td>
+              <td class="p-med">Vidēja <small>3 / 60%</small></td>
+              <td class="p-high">Augsta <small>4 / 20k €</small></td>
+              <td class="p-high">3 × 4 = 12 <small>(12k €)</small></td>
+              <td>Novērst</td>
+              <td>Katru KPI pārbaudīt pret pieejamiem datu avotiem definēšanas fāzē. Ja dati nav pieejami, KPI iekļaut kā "nākotnes metrika" ar skaidru datu pieejamības uzlabošanas plānu. Datu un IT komandas iesaiste KPI apstiprināšanā.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-opp">Iespēja</span></td>
+              <td>P1_1: Esošo procesu kartēšana</td>
+              <td>Procesu kartēšanas laikā var tikt identificēti papildu ietaupījumu potenciāla avoti ārpus sākotnēji plānotā satura, paplašinot programmas ietekmi.</td>
+              <td class="p-med">Vidēja <small>3 / 50%</small></td>
+              <td class="p-med">Vidēja–Augsta <small>3 / 30k €</small></td>
+              <td class="p-med">3 × 3 = 9 <small>(15k €)</small></td>
+              <td>Izmantot</td>
+              <td>Izveidot reģistru ārpus tvēruma atklājumiem (out-of-scope findings), ko nodot izskatīšanai P2 programmā vai kā atsevišķus uzlabojumu projektus. Informēt vadību par papildu iespējām jau P1 starpziņojumā.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-threat">Draudi</span></td>
+              <td>P1_2 + P1_3: Analīze un automatizācijas plāns</td>
+              <td>Programmas laika ierobežojumu dēļ analīze un automatizācijas plānošana tiek veikta paralēli, radot risku, ka lēmumi par automatizāciju tiek pieņemti pirms analīzes ir pabeigta.</td>
+              <td class="p-med">Vidēja <small>3 / 50%</small></td>
+              <td class="p-med">Vidēja <small>3 / 15k €</small></td>
+              <td class="p-med">3 × 3 = 9 <small>(7.5k €)</small></td>
+              <td>Mazināt</td>
+              <td>Definēt skaidrus fāžu vārtus (stage gates) starp P1_2 un P1_3. Nodrošināt, ka automatizācijas prioritizācijas matrica tiek pabeigta tikai pēc neefektivitāšu identificēšanas pārskata apstiprināšanas. Pārskatīt laika plānu, ja nepieciešams.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <div class="slide-note"><b>Riska iedarbība</b> = Varbūtība × Ietekme (skala 1–5) jeb sagaidāmā naudas vērtība (€).</div>
     </section>
 
     <!-- ============ SLAIDS 7: Posma plāns ============ -->
     <section>
-      <h2 class="slide-title">7. Posma plāna izstrāde — P1 Procesu optimizācijas programma</h2>
-      <div class="schedule-wrap">
+      <h2 class="slide-title"><span class="chip">7</span>Posma plāna izstrāde — P1 Procesu optimizācijas programma</h2>
+      <div class="table-scroll">
         <table class="schedule">
           <thead>
             <tr>
@@ -370,6 +465,10 @@
       </div>
     </section>
 
+  </div>
+
+  <div class="deck-footer">
+    <span class="brand">RSU · PRINCE2 — <b>Procesu optimizācija</b></span>
   </div>
 </div>
 

@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(rm -rf _pptx_tmp)"
+      "Bash(rm -rf _pptx_tmp)",
+      "Bash(git ls-remote *)",
+      "Bash(git show-ref *)",
+      "Bash(git push *)",
+      "Bash(git fetch *)",
+      "Bash(git rev-list *)"
     ]
   }
 }

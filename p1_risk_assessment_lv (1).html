@@ -1,0 +1,112 @@
+<style>
+h2.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.ra-wrap{padding:1rem 0;font-size:13px}
+.ra-title{font-size:18px;font-weight:500;color:#3B6D11;margin:0 0 1.25rem}
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+th{background:#EAF3DE;color:#27500A;font-weight:500;padding:8px 10px;border:0.5px solid #C0DD97;font-size:12px;vertical-align:top}
+td{padding:8px 10px;border:0.5px solid #C0DD97;vertical-align:top;color:var(--color-text-primary);line-height:1.5}
+tr:nth-child(even) td{background:#F5FAF0}
+tr:nth-child(odd) td{background:var(--color-background-primary)}
+.badge-threat{display:inline-block;background:#FCEBEB;color:#A32D2D;border-radius:4px;padding:2px 6px;font-size:11px;font-weight:500}
+.badge-opp{display:inline-block;background:#EAF3DE;color:#3B6D11;border-radius:4px;padding:2px 6px;font-size:11px;font-weight:500}
+.prob-high{color:#A32D2D;font-weight:500}
+.prob-med{color:#854F0B;font-weight:500}
+.prob-low{color:#3B6D11;font-weight:500}
+.exp-high{font-weight:500;color:#A32D2D}
+.exp-med{font-weight:500;color:#854F0B}
+.exp-low{font-weight:500;color:#3B6D11}
+col.c1{width:7%}col.c2{width:11%}col.c3{width:20%}col.c4{width:9%}col.c5{width:9%}col.c6{width:10%}col.c7{width:9%}col.c8{width:25%}
+</style>
+<div class="ra-wrap">
+<h2 class="sr-only">Riska novērtējums P1: Procesu optimizācijas programma</h2>
+<p class="ra-title">Riska novērtējums — P1: Procesu optimizācijas programma</p>
+<table>
+<colgroup>
+<col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"><col class="c6"><col class="c7"><col class="c8">
+</colgroup>
+<thead>
+<tr>
+<th>Riska veids</th>
+<th>Kategorija</th>
+<th>Apraksts</th>
+<th>Varbūtība</th>
+<th>Ietekme</th>
+<th>Riska iedarbība</th>
+<th>Plānotā darbība</th>
+<th>Plānotās darbības apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge-threat">Draudi</span></td>
+<td>P1_1: Esošo procesu kartēšana</td>
+<td>Procesu īpašnieki nav pieejami vai nesadarbojas intervijās un procesu aprakstīšanā, tādēļ kartēšana var būt nepilnīga vai neprecīza.</td>
+<td><span class="prob-high">Augsta<br>3 vai 60%</span></td>
+<td><span class="prob-med">Vidēja<br>3 vai EUR 15k</span></td>
+<td><span class="exp-high">3 × 3 = 9<br>vai<br>0.60 × 15 000 = EUR 9k</span></td>
+<td>Novērst</td>
+<td>Nodrošināt vadības iesaisti, lai apstiprinātu procesu īpašnieku dalību. Iekļaut kartēšanas darba sesijas darba kārtībā kā obligātas. Sagatavot iepriekšējas anketas, lai mazinātu laika slodzi tikšanās laikā.</td>
+</tr>
+<tr>
+<td><span class="badge-threat">Draudi</span></td>
+<td>P1_2: Neefektīvo procesu identificēšana</td>
+<td>Procesu analīze tiek veikta bez pietiekamiem sistēmu datiem (izpildes laiki, kļūdu biežums), tāpēc secinājumi var būt subjektīvi un neatbalstīti ar skaitļiem.</td>
+<td><span class="prob-med">Vidēja<br>3 vai 60%</span></td>
+<td><span class="prob-high">Augsta<br>4 vai EUR 25k</span></td>
+<td><span class="exp-high">3 × 4 = 12<br>vai<br>0.60 × 25 000 = EUR 15k</span></td>
+<td>Mazināt</td>
+<td>Pirms analīzes fāzes apzināt pieejamos datu avotus (core banking, CRM, HR sistēmas). Ja dati nav pieejami sistēmu līmenī, paredzēt resursu manuālai datu vākšanai un iekļaut šo piepūli laika plānā.</td>
+</tr>
+<tr>
+<td><span class="badge-threat">Draudi</span></td>
+<td>P1_3: Manuālo darbību samazināšanas plāns</td>
+<td>Automatizācijas risinājumi (RPA, API integrācijas) nav tehniski realizējami esošajā IT arhitektūrā, tāpēc automatizācijas ceļa karte var būt nereālistiska.</td>
+<td><span class="prob-med">Vidēja<br>3 vai 60%</span></td>
+<td><span class="prob-high">Augsta<br>4 vai EUR 30k</span></td>
+<td><span class="exp-high">3 × 4 = 12<br>vai<br>0.60 × 30 000 = EUR 18k</span></td>
+<td>Mazināt</td>
+<td>IT arhitektūras komanda piedalās risinājumu izvērtēšanā jau plānošanas fāzē. Katram automatizācijas kandidātam veikt tehnisku priekšizpēti pirms iekļaušanas ceļa kartē. Paredzēt alternatīvas pieejas (daļēja automatizācija, Excel makro) kā rezerves variantus.</td>
+</tr>
+<tr>
+<td><span class="badge-threat">Draudi</span></td>
+<td>P1_4: Standartizētu procesu izstrāde</td>
+<td>Darbinieki pretojas jauno standartizēto procesu ieviešanai, jo izmaiņas skar esošos darba ieradumus un uztverto autonomiju. Risks īpaši aktuāls nodaļās ar augstu darba stāžu.</td>
+<td><span class="prob-high">Augsta<br>4 vai 80%</span></td>
+<td><span class="prob-med">Vidēja<br>3 vai EUR 20k</span></td>
+<td><span class="exp-high">4 × 3 = 12<br>vai<br>0.80 × 20 000 = EUR 16k</span></td>
+<td>Mazināt</td>
+<td>Iesaistīt galvenos darbiniekus procesu izstrādes darba grupās, nevis informēt tikai par gatavajiem rezultātiem. Skaidri komunicēt izmaiņu mērķi un ieguvumus. Nodrošināt vadītāju atbalstu un apmācības pirms jauno procesu laišanas darbā.</td>
+</tr>
+<tr>
+<td><span class="badge-threat">Draudi</span></td>
+<td>P1_5: KPI un procesu efektivitātes metriku definēšana</td>
+<td>Definētie KPI nav izmērāmi ar esošajiem sistēmu rīkiem, tāpēc KPI monitoringa panelis paliek tikai prototipa līmenī bez reālas datu padeves.</td>
+<td><span class="prob-med">Vidēja<br>3 vai 60%</span></td>
+<td><span class="prob-high">Augsta<br>4 vai EUR 20k</span></td>
+<td><span class="exp-high">3 × 4 = 12<br>vai<br>0.60 × 20 000 = EUR 12k</span></td>
+<td>Novērst</td>
+<td>Katru KPI pārbaudīt pret pieejamiem datu avotiem definēšanas fāzē. Ja dati nav pieejami, KPI iekļaut kā "nākotnes metrika" ar skaidru datu pieejamības uzlabošanas plānu. Datu un IT komandas iesaiste KPI apstiprināšanā.</td>
+</tr>
+<tr>
+<td><span class="badge-opp">Iespēja</span></td>
+<td>P1_1: Esošo procesu kartēšana</td>
+<td>Procesu kartēšanas laikā var tikt identificēti papildu ietaupījumu potenciāla avoti ārpus sākotnēji plānotā satura, paplašinot programmas ietekmi.</td>
+<td><span class="prob-med">Vidēja<br>3 vai 50%</span></td>
+<td><span class="prob-med">Vidēja–Augsta<br>3 vai EUR 30k</span></td>
+<td><span class="exp-med">3 × 3 = 9<br>vai<br>0.50 × 30 000 = EUR 15k</span></td>
+<td>Izmantot</td>
+<td>Izveidot reģistru ārpus tvēruma atklājumiem (out-of-scope findings), ko nodot izskatīšanai P2 programmā vai kā atsevišķus uzlabojumu projektus. Informēt vadību par papildu iespējām jau P1 starpziņojumā.</td>
+</tr>
+<tr>
+<td><span class="badge-threat">Draudi</span></td>
+<td>P1_2 + P1_3: Analīze un automatizācijas plāns</td>
+<td>Programmas laika ierobežojumu dēļ analīze un automatizācijas plānošana tiek veikta paralēli, radot risku, ka lēmumi par automatizāciju tiek pieņemti pirms analīzes ir pabeigta.</td>
+<td><span class="prob-med">Vidēja<br>3 vai 50%</span></td>
+<td><span class="prob-med">Vidēja<br>3 vai EUR 15k</span></td>
+<td><span class="exp-med">3 × 3 = 9<br>vai<br>0.50 × 15 000 = EUR 7.5k</span></td>
+<td>Mazināt</td>
+<td>Definēt skaidrus fāžu vārtus (stage gates) starp P1_2 un P1_3. Nodrošināt, ka automatizācijas prioritizācijas matrica tiek pabeigta tikai pēc neefektivitāšu identificēšanas pārskata apstiprināšanas. Pārskatīt laika plānu, ja nepieciešams.</td>
+</tr>
+</tbody>
+</table>
+</div>
