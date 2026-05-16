@@ -8,6 +8,7 @@ Reveal.initialize({
   controls: true,
   progress: true,
   center: false,
+  display: 'flex',       // aktīvais slaids = flex kolonna (satura mērogošanai)
   transition: 'slide',
   // PDF eksports: atver lapu ar ?print-pdf un izdrukā (Ctrl+P)
 });

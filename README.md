@@ -9,11 +9,10 @@ HTML/CSS/JS prezentācija (Reveal.js), gatava izvietošanai Vercel.
 | Titula | Procesu optimizācijas un produktivitātes uzlabošanas programma |
 | 1 | Mērķa sadalījums un pamatprogrammas |
 | 2 | Izvēlētā risinājuma pamatojums |
-| 3 | Projekta apraksts (Project Brief I) |
-| 4 | Projekta produkti (Project Brief III) |
-| 5 | P1 Deliverable rezultāti |
-| 6 | Riska novērtējums (draudi / iespējas) |
-| 7 | Posma plāna izstrāde |
+| 3 | Projekta apraksts (Project Brief — apvienots) |
+| 4 | P1 Deliverable rezultāti |
+| 5 | Riska novērtējums (draudi / iespējas) |
+| 6 | Posma plāna izstrāde |
 
 ## Lokāla apskate
 
