@@ -1,18 +1,24 @@
 # RSU PRINCE2 — Procesu optimizācijas prezentācija
 
 HTML/CSS/JS prezentācija (Reveal.js), gatava izvietošanai Vercel.
+12 slaidu naratīvs ar hibrīda dizainu: tumši zaļš titulslaids, akcentslaidi (procesu piemērs un noslēgums), gaiši satura slaidi.
 
-## Saturs
+## Saturs (12 slaidi)
 
-| Slaids | Tēma |
-|--------|------|
-| Titula | Procesu optimizācijas un produktivitātes uzlabošanas programma |
-| 1 | Mērķa sadalījums un pamatprogrammas |
-| 2 | Izvēlētā risinājuma pamatojums |
-| 3 | Projekta apraksts (Project Brief — apvienots) |
-| 4 | P1 Deliverable rezultāti |
-| 5 | Riska novērtējums (draudi / iespējas) |
-| 6 | Posma plāna izstrāde |
+| # | Tēma | Stils |
+|---|------|-------|
+| 1 | Ievads — projekta apraksts un dienaskārtība | Tumšs |
+| 2 | Projekta problēma un mērķis | Gaišs |
+| 3 | PRINCE2 pieeja projektam — 5 posmi | Gaišs |
+| 4 | P1_1 · Esošo procesu analīze | Gaišs |
+| 5 | P1_2 · Neefektīvo procesu identificēšana | Gaišs |
+| 6 | P1_3 · Manuālo darbību samazināšanas plāns | Gaišs |
+| 7 | P1_4 · Standartizētu procesu izstrāde | Gaišs |
+| 8 | P1_5 · KPI un efektivitātes metriku definēšana | Gaišs |
+| 9 | Stage Plan — projekta ieviešanas plāns | Gaišs |
+| 10 | Risku novērtējums (draudi + iespējas) | Gaišs |
+| 11 | Procesu optimizācijas piemērs (plūsma + Gantt) | **Tumšs** |
+| 12 | Noslēgums | **Tumšs** |
 
 ## Lokāla apskate
 
@@ -57,9 +63,15 @@ vercel --prod # produkcija
 
 ## Rediģēšana
 
-Viss saturs ir `index.html` (katrs `<section>` = viens slaids).
-Stili — `css/theme.css`. Reveal.js konfigurācija — `js/main.js`.
+- Saturs — `index.html` (katrs `<section>` = viens slaids).
+- Stili — `css/theme.css`. Tumšie slaidi izmanto `.dark-slide` klasi un `data-background-color="#0a1612"`.
+- Reveal.js konfigurācija — `js/main.js` (1280×720 viewport).
 
-> Piezīme: 2. slaida šūnu krāsojums seko leģendai pēc vērtības
-> (Zems = zaļš, Vidējs = dzeltens, Augsts = sarkans), kas ir konsekventi
-> ar leģendas tekstu.
+### Tumši zaļās tēmas mainīgie (`css/theme.css`)
+
+| Mainīgais | Vērtība | Lietojums |
+|-----------|---------|-----------|
+| `--d-bg` | `#0a1612` | Slaida fons |
+| `--d-accent` | `#5BC97B` | Zaļais akcents (ikonas, virsraksti, joslas) |
+| `--d-card` | `rgba(74,222,128,.06)` | Karšu fons uz tumša |
+| `--d-border` | `rgba(124,220,158,.28)` | Karšu apmales |
